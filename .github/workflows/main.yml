@@ -1,0 +1,17 @@
+name: CI Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Say hello
+        run: echo "Hello Yarin the Great Man, CI/CD works!"
+
