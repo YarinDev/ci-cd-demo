@@ -14,6 +14,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Build Docker image
+      rin: docker build -t ci-demo-image .
+
     - name: Set up Java 17
       uses: actions/setup-java@v3
       with:
